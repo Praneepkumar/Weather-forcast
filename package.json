@@ -1,0 +1,12 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A weather forecast application",
+  "scripts": {},
+  "author": "praneep kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "temperature": "^1.0.3"
+  }
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+
+    <!-------------------Font-family---------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <!-------------------Main-style---------------------->
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="stylesheet" href="../src/css/responsive.css" />
+    <!-------------------Phosphor-icons---------------------->
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-------------------main-script---------------------->
+    <script type="module" src="../src/js/controller.js"></script>
+  </head>
+  <body>
+    <!-------------------Container---------------------->
+    <div class="container">
+      <!-------------------Header---------------------->
+      <header class="header mt-4">
+        <form class="search d-flex">
+          <input class="search__field" type="text" placeholder="Search city" />
+          <button class="btn search__btn">Search</button>
+        </form>
+      </header>
+
+      <!-------------------Main---------------------->
+      <main class="main-content mt-4">
+        <!-----------local-weather-overview------------->
+        <section class="section-left local-overview d-flex col mt-4">
+          <!-----------Row-1------------->
+          <div class="overview__header d-flex">
+            <!-- <div class="location-info d-flex">
+              <div class="location-heading d-flex">
+                <h3 class="heading-secondary">Loading...</h3>
+                <div class="text-placeholder">
+                  <p class="current-date">...</p>
+                  <div class="temperature-info d-flex">
+                    <span><i class="ph ph-cloud-rain kpi-icon"></i></span>
+                    <p>...</p>
+                  </div>
+                </div>
+              </div>
+              <div class="temperature-measure">
+                <h2 class="heading-primary"></h2>
+              </div>
+            </div> -->
+            <div class="weather-img">
+              <!-- <img
+                src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                alt="weather" /> -->
+            </div>
+          </div>
+          <!-----------Row-2------------->
+          <div class="today-forecast card">
+            <h3 class="heading-terniary card-heading">Today's Forecast</h3>
+            <div class="row d-flex mt-4 temperature-timings">
+              <!-----------Col-1------------->
+              <!-- <div class="time-col col d-flex">
+                <p>6:00 AM</p>
+                <div class="timings-img">
+                  <img
+                    class="img-responsive"
+                    src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                    alt="weather" />
+                </div>
+                <h2 class="today-temp">32&deg;C</h2>
+              </div> -->
+
+              <!-----------Col-1------------->
+              <!-- <div class="time-col col d-flex">
+                <p>6:00 AM</p>
+                <div class="timings-img">
+                  <img
+                    class="img-responsive"
+                    src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                    alt="weather" />
+                </div>
+                <h2 class="today-temp">32&deg;C</h2>
+              </div> -->
+
+              <!-----------Col-1------------->
+              <!--  <div class="time-col col d-flex">
+                <p>6:00 AM</p>
+                <div class="timings-img">
+                  <img
+                    class="img-responsive"
+                    src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                    alt="weather" />
+                </div>
+                <h2 class="today-temp">32&deg;C</h2>
+              </div> -->
+
+              <!-----------Col-1------------->
+              <!--  <div class="time-col col d-flex">
+                <p>6:00 AM</p>
+                <div class="timings-img">
+                  <img
+                    class="img-responsive"
+                    src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                    alt="weather" />
+                </div>
+                <h2 class="today-temp">32&deg;C</h2>
+              </div> -->
+              <!-----------Col-1------------->
+              <!-- <div class="time-col col d-flex">
+                <p>6:00 AM</p>
+                <div class="timings-img">
+                  <img
+                    class="img-responsive"
+                    src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                    alt="weather" />
+                </div>
+                <h2 class="today-temp">32&deg;C</h2>
+              </div>
+ -->
+              <!-----------Col-1------------->
+              <!--   <div class="time-col col d-flex">
+                <p>6:00 AM</p>
+                <div class="timings-img">
+                  <img
+                    class="img-responsive"
+                    src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                    alt="weather" />
+                </div>
+                <h2 class="today-temp">32&deg;C</h2>
+              </div> -->
+            </div>
+          </div>
+          <div class="air-conditions card">
+            <h3 class="heading-terniary card-heading">Air Conditions</h3>
+
+            <div class="mt-4 weather-kpi">
+              <!------------------col---------------------------->
+              <!--  <div class="kpi-card d-flex">
+                <i class="ph ph-thermometer-simple kpi-icon"></i>
+
+                <div class="kpi-description d-flex">
+                  <h4 class="kpi-heading">Real Feel</h4>
+                  <h3 class="kpi-metrics">30&deg;</h3>
+                </div>
+              </div> -->
+
+              <!------------------col---------------------------->
+
+              <!--  <div class="kpi-card d-flex">
+                <i class="ph ph-wind kpi-icon"></i>
+                <div class="kpi-description d-flex">
+                  <h4 class="kpi-heading">Wind</h4>
+                  <h3 class="kpi-metrics">
+                    0.2
+                    <span>kmph</span>
+                  </h3>
+                </div>
+              </div>
+ -->
+              <!------------------col---------------------------->
+              <!-- 
+              <div class="kpi-card d-flex">
+                <i class="ph ph-cloud-rain kpi-icon"></i>
+
+                <div class="kpi-description d-flex">
+                  <h4 class="kpi-heading">Chances of rain</h4>
+                  <h3 class="kpi-metrics">3&percnt;</h3>
+                </div>
+              </div>
+ -->
+              <!------------------col---------------------------->
+
+              <!-- <div class="kpi-card d-flex">
+                <i class="ph ph-sun kpi-icon"></i>
+
+                <div class="kpi-description d-flex">
+                  <h4 class="kpi-heading">UV Index</h4>
+                  <h3 class="kpi-metrics">3</h3>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </section>
+
+        <!-----------Full-week-forecast------------->
+        <aside class="section-right week-forecast card col">
+          <h3 class="heading-terniary card-heading">7-Day Forecast</h3>
+          <!-----------ROW-1------------->
+          <div class="forecast-container d-flex mt-4">
+            <!--  <div class="forecast-description d-flex mt-4">
+              <p class="forecast-day">Today</p>
+              <div class="forecast-weather d-flex">
+                <img
+                  class="img-responsive"
+                  src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                  alt="weather" />
+                <h4 class="forecast-heading">Cloudy</h4>
+              </div>
+              <p class="forecast-wind">
+                <span>32</span>
+                kmph
+              </p>
+            </div> -->
+            <!-----------ROW-2------------->
+            <!-- <div class="forecast-description d-flex">
+              <p class="forecast-day">Wed</p>
+              <div class="forecast-weather d-flex">
+                <img
+                  class="img-responsive"
+                  src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                  alt="weather" />
+                <h4 class="forecast-heading">Cloudy</h4>
+              </div>
+              <p class="forecast-wind">
+                <span>32</span>
+                kmph
+              </p>
+            </div> -->
+            <!-----------ROW-3------------->
+            <!--    <div class="forecast-description d-flex">
+              <p class="forecast-day">Thu</p>
+              <div class="forecast-weather d-flex">
+                <img
+                  class="img-responsive"
+                  src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                  alt="weather" />
+                <h4 class="forecast-heading">Cloudy</h4>
+              </div>
+              <p class="forecast-wind">
+                <span>32</span>
+                kmph
+              </p>
+            </div> -->
+            <!-----------ROW-4------------->
+            <!-- <div class="forecast-description d-flex">
+              <p class="forecast-day">Fri</p>
+              <div class="forecast-weather d-flex">
+                <img
+                  class="img-responsive"
+                  src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                  alt="weather" />
+                <h4 class="forecast-heading">Cloudy</h4>
+              </div>
+              <p class="forecast-wind">
+                <span>32</span>
+                kmph
+              </p>
+            </div> -->
+            <!-----------ROW-5------------->
+            <!--  <div class="forecast-description d-flex">
+              <p class="forecast-day">Sat</p>
+              <div class="forecast-weather d-flex">
+                <img
+                  class="img-responsive"
+                  src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                  alt="weather" />
+                <h4 class="forecast-heading">Cloudy</h4>
+              </div>
+              <p class="forecast-wind">
+                <span>32</span>
+                kmph
+              </p>
+            </div> -->
+            <!-----------ROW-6------------->
+            <!-- <div class="forecast-description d-flex">
+              <p class="forecast-day">Sun</p>
+              <div class="forecast-weather d-flex">
+                <img
+                  class="img-responsive"
+                  src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                  alt="weather" />
+                <h4 class="forecast-heading">Cloudy</h4>
+              </div>
+              <p class="forecast-wind">
+                <span>32</span>
+                kmph
+              </p>
+            </div> -->
+            <!-----------ROW-7------------->
+            <!-- <div class="forecast-description d-flex">
+              <p class="forecast-day">Mon</p>
+              <div class="forecast-weather d-flex">
+                <img
+                  class="img-responsive"
+                  src="https://weather.aniqa.dev/assets/icons/clear-day.svg"
+                  alt="weather" />
+                <h4 class="forecast-heading">Cloudy</h4>
+              </div>
+              <p class="forecast-wind">
+                <span>32</span>
+                kmph
+              </p>
+            </div> -->
+          </div>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
