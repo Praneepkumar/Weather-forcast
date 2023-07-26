@@ -9,9 +9,11 @@ class OverviewView extends View {
             <div class="location-info d-flex">
               <div class="location-heading d-flex">
                 <h3 class="heading-secondary">${
-                  this._data.locationDetails.split(",")[0]
-                },<span> ${this._data.locationDetails.split(",")[1]} ${
+                  this?._data.locationDetails?.split(",")[0]
+                },<span> ${this?._data?.locationDetails?.split(",")[1]} ${
       this._data.locationDetails.split(",")[2]
+        ? this._data.locationDetails.split(",")[2]
+        : ""
     }</span></h3>
                 <div class="text-placeholder">
                   <p class="current-date">
@@ -22,25 +24,27 @@ class OverviewView extends View {
                     <span><i class="ph ph-cloud-rain kpi-icon"></i></span>
                     <p>
                       Chance of Raining:
-                      <span>${this._data.currentConditions.humidity}%</span>
+                      <span>${Math.floor(
+                        this._data.currentConditions?.humidity
+                      )}&percnt;</span>
                     </p>
                   </div>
                 </div>
               </div>
               <div class="temperature-measure">
                 <h2 class="heading-primary">${Math.floor(
-                  this._data.currentConditions.temp
+                  this._data.currentConditions?.temp
                 )}&deg; <span>c</span></h2>
                 <p class="weather-img-desc">${
-                  this._data.currentConditions.description
+                  this?._data.currentConditions?.description
                 }
                </p>
               </div>
               </div>
               <div class="weather-img">
               <img src="../img/icons/${
-                this._data.currentConditions.icon
-              }.svg" alt=${this._data.currentConditions.icon} />
+                this._data.currentConditions?.icon
+              }.svg" alt=${this._data.currentConditions?.icon} />
                
             </div>
             </div>

@@ -2,7 +2,10 @@
   "name": "weather-app",
   "version": "1.0.0",
   "description": "A weather forecast application",
-  "scripts": {},
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
   "author": "praneep kumar",
   "license": "ISC",
   "devDependencies": {
