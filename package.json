@@ -8,6 +8,7 @@
   },
   "author": "praneep kumar",
   "license": "ISC",
+  "default": "index.html",
   "devDependencies": {
     "parcel": "^2.9.3",
     "temperature": "^1.0.3"
