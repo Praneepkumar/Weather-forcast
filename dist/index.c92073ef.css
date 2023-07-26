@@ -1,0 +1,404 @@
+*, :after, :before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-bg: #f5f5f5;
+  --main-text: #202b3b;
+  --card-bg: #eaecef;
+  --text-light: #9399a2;
+  --icon-btn-shadow: 1px 1px 8px #91919126;
+  --btn-bg: #36404f;
+  --card-radius: 1rem;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.col {
+  flex: 1 0;
+}
+
+.mt-4 {
+  margin-top: 1.8rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.8rem !important;
+}
+
+.br-2 {
+  border-radius: 2rem;
+}
+
+.btn {
+  padding: 1.3rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.heading-primary {
+  font-size: 3.05rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.heading-terniary {
+  font-size: 1.8rem;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 2.5rem 2.2rem;
+}
+
+.card-heading {
+  color: #798089;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.section-right, .section-left {
+  max-height: 99999px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--main-bg);
+  color: var(--main-text);
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 1.5rem 0;
+}
+
+.search {
+  border-radius: var(--card-radius);
+  align-items: center;
+  transition: all .3s;
+}
+
+.search input:active {
+  outline: none;
+}
+
+.search input:focus {
+  outline: 2px solid #798089;
+}
+
+.search__field {
+  color: inherit;
+  background-color: var(--card-bg);
+  border: none;
+  border-radius: 2rem 0 0 2rem;
+  width: 54.3rem;
+  padding: 1.3rem 1.8rem;
+  font-family: inherit;
+  font-size: 1.7rem;
+}
+
+.search__btn {
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  color: #fff;
+  border: none;
+  border-radius: 0 2rem 2rem 0;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.main-content {
+  grid-template-columns: 5fr 3fr;
+  gap: 1.6rem;
+  padding-bottom: 4rem;
+  display: grid;
+}
+
+.local-overview {
+  flex-direction: column;
+  gap: 1.4rem;
+  display: flex;
+}
+
+.overview__header {
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5rem 2.2rem;
+  transition: all .3s;
+}
+
+.location-heading {
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.location-heading h3 span {
+  color: var(--main-text);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.location-info {
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.text-placeholder {
+  padding: .6rem 0;
+  display: flex;
+}
+
+.text-placeholder .current-date {
+  border-right: 1px solid #9399a265;
+  padding-right: 1.2rem;
+}
+
+.current-date {
+  color: var(--main-text);
+  font-size: 1.6rem;
+}
+
+.temperature-info {
+  color: var(--text-light);
+  gap: .7rem;
+  padding-left: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.current-date span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.temperature-info span {
+  color: var(--main-text);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.weather-img {
+  width: 25%;
+}
+
+.weather-img img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.temperature-measure {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.temperature-measure p {
+  width: 60%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.temperature-measure h2 {
+  font-size: 4.2rem;
+  font-weight: 800;
+}
+
+.temperature-measure h2 span {
+  color: var(--main-text);
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.temperature-timings {
+  justify-content: space-around;
+  display: flex;
+}
+
+.time-col {
+  border-radius: var(--card-radius);
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: .9rem 0;
+  transition: all .5s;
+  display: flex;
+  position: relative;
+}
+
+.time-col:not(:last-child):after {
+  content: "";
+  height: inherit;
+  border-right: 1.6px solid #dadcde;
+  padding: 6.6rem 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.time-col p {
+  color: var(--text-light);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.time-col:hover {
+  background-color: #ffffff6c;
+}
+
+.time-col:hover p {
+  color: #676b71;
+}
+
+.time-col:hover .timings-img img {
+  transform: scale(1.2);
+}
+
+.timings-img {
+  width: 6rem;
+  transition: all .5s;
+}
+
+.today-temp {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.weather-kpi {
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  row-gap: 2.4rem;
+  display: grid;
+}
+
+.kpi-card {
+  gap: 1.3rem;
+}
+
+.kpi-icon {
+  color: var(--text-light);
+  font-size: 2.4rem;
+}
+
+.kpi-description {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kpi-metrics {
+  font-size: 2.4rem;
+}
+
+.kpi-metrics span {
+  color: var(--text-light);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.kpi-heading {
+  color: #a9adb5;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.week-forecast {
+  flex-direction: column;
+}
+
+.forecast-container {
+  flex-direction: column;
+  gap: .7rem;
+}
+
+.forecast-description {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+.forecast-description:first-child {
+  padding-top: 0;
+}
+
+.forecast-description:last-child {
+  padding-bottom: 0;
+}
+
+.forecast-description:not(:last-child) {
+  border-bottom: 1.6px solid #dadcde;
+}
+
+.forecast-day {
+  color: var(--text-light);
+  width: 4rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.forecast-weather {
+  align-items: center;
+  gap: .9rem;
+  width: 40%;
+}
+
+.forecast-weather img {
+  width: 27%;
+}
+
+.forecast-heading {
+  font-size: 1.4rem;
+}
+
+.forecast-temp {
+  color: var(--text-light);
+  width: 8rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.forecast-temp span {
+  color: var(--main-text);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.spinner {
+  width: 30%;
+  display: block;
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */

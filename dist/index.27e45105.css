@@ -1,0 +1,123 @@
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (width <= 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (width <= 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (width >= 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (width <= 85em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (width <= 62.5em) {
+  .main-content {
+    grid-template-columns: auto;
+  }
+
+  .container {
+    padding: 0 2.5rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .location-heading h3 span {
+    font-size: 2.2rem;
+  }
+
+  .text-placeholder .current-date {
+    font-size: 2rem;
+  }
+
+  .current-date span {
+    font-size: 2.2rem;
+  }
+
+  .kpi-icon {
+    font-size: 1.8em;
+  }
+
+  .temperature-info {
+    font-size: 2rem;
+  }
+
+  .temperature-info span {
+    font-size: 2.2rem;
+  }
+
+  .temperature-measure h2 {
+    font-size: 4.6rem;
+  }
+
+  .temperature-measure p {
+    font-size: 2rem;
+  }
+
+  .card-heading {
+    font-size: 1.8rem;
+  }
+
+  .time-col p {
+    font-size: 1.9rem;
+  }
+
+  .today-temp {
+    font-size: 2.2rem;
+  }
+
+  .time-col {
+    gap: 2.4rem;
+  }
+
+  .time-col:not(:last-child):after {
+    padding: 9rem 0;
+  }
+
+  .location-info {
+    gap: 5rem;
+  }
+
+  .kpi-icon-mobile {
+    font-size: 4rem !important;
+  }
+
+  .kpi-heading, .forecast-day, .forecast-heading {
+    font-size: 2rem;
+  }
+
+  .forecast-weather img {
+    width: 20%;
+  }
+
+  .forecast-weather {
+    gap: 1.2rem;
+  }
+
+  .forecast-temp span {
+    font-size: 2.4rem;
+  }
+
+  .forecast-temp {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=index.27e45105.css.map */
